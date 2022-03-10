@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.toolbox-cont{
+    height: 5rem;
+    background-color: #4b4b4b;
+    display: flex;
+    align-items: center;
+}
+.toolbox-cont > * {
+    margin-left: 4rem;
+    border-radius: 5px ;
+}
+.toolbox-priority-cont{
+    height: 3.5rem;
+    width: 16rem;
+    background-color: #3d3d3d;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.action-btn-cont{
+    height: 3.5rem;
+    width: 8rem;
+    background-color: #3d3d3d;
+   display: flex;
+}
+.action-btn-cont > *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 2rem;
+    color: #d1d8e0 ;
+}
+.clear-btn{
+    height: 3.5rem;
+    width: 4rem;
+   
+    display: flex;
+    justify-content: center;
+    background-color: #3d3d3d;
+    align-items: center;
+}
+.remove-data-btn{
+    width: 40%;
+    font-size: 2rem;
+    color: #d1d8e0
+}
+.clear-btn:hover{
+    background-color: #485460;
+}
+.color{
+    height: 1.2rem;
+    width: 2.5rem;
+    background-color: lightsalmon;
+    border-radius: 2px;
+}
+.light-pink{
+    background-color: lightpink;
+}
+.light-blue{
+    background-color: lightblue;
+}
+.light-green{
+    background-color: lightgreen;
+}
+.black{
+    background-color: black;
+}
+.action-btn-cont>*:hover{
+    background-color: #485460;
+}
+.modal-cont{
+    height: 50vh;
+    width:45vw;
+    background-color: lightblue;
+    position: absolute;
+    top:calc(( 100vh - 50vh) / 2);
+    left: calc(( 100vw - 45vw) / 2);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    display: none;
+}
+.textarea-cont{
+    height: 100%;
+    width: 75%;
+    border: none;
+    outline: none;
+    background-color: #d2dae2;
+    resize: none;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.priority-colors-cont{
+    height: 100%;
+    width: 25%;
+    background-color:#4b4b4b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.priority-color{
+    height: 3rem;
+    width: 55%;
+
+    align-items: center;
+    
+}
+.border{
+    border: 5px solid #d1d8e0;
+}
+
+.ticket-cont{
+    height: 12rem;
+    width: 16rem;
+    background-color: #dfe4ea;
+}
+.ticket-color{
+    height: 1rem;
+
+}
+.ticket-id{
+    height: 2rem;
+    padding: 0.4rem;
+}
+.task-area{
+    height: calc( 100% - 1rem - 2rem - 2rem);
+    padding: 0.4rem;
+    outline: none;
+    overflow-wrap: break-word;
+    overflow: auto;
+}
+
+.ticket-lock{
+    height: 2rem ;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.5rem;
+    padding-right: 1rem;
+    color: #a5b1c2;
+}
+
+
+.main-cont{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap:2rem;
+    justify-content:center;
+}
+
+@media screen  and (min-width:425px) and (max-width:768px) {
+    .modal-cont{
+        width:60vw;
+        left: calc(( 100vw - 60vw) / 2);
+    }
+
+    .ticket-cont{
+        height: 10rem;
+        width: 12rem;
+    }
+    
+    .clear-btn{
+        margin-right: 1rem;
+    }
+    .remove-data-btn{
+        
+        font-size: 1.5rem;
+    }
+}
+@media  screen and (max-width:426px){
+    
+    .toolbox-priority-cont > *{
+        padding: 1rem;
+        border-radius: 100%;
+    }
+    .action-btn-cont{
+       margin-right:2rem ;
+    }
+    .modal-cont{
+       height: 65vh;
+        width: 70vw;
+        left: calc(( 100vw - 60vw) / 2);
+        flex-direction: column;
+        box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    }
+    .priority-colors-cont{
+        height: 20%;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem;
+    }
+    .priority-colors-cont >*{
+        margin: 0.2rem;
+        border-radius:100% ;
+    }
+    .textarea-cont{
+        height: 80%;
+        width: 100%;
+    }
+    .clear-btn{
+        margin-right: 1rem;
+    }
+    .remove-data-btn{
+        font-size: 1.5rem;
+    }
+    .toolbox-cont > * {
+        margin-left: 1rem;
+        border-radius: 5px ;
+    }
+   
+}
